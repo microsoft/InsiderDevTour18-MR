@@ -2,6 +2,8 @@
 # Build Windows Mixed Reality Apps
 
 ## Prerequisites:
+- Windows MR supported [PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)
+- Windows MR headset and controllers
 - Windows 10 April 2018 Update
 - Visual Studio 2017 (15.7.1 or higher) (Community works great)
 - Universal Windows Platform development workload with Windows 10 SDK (10.0.17134.0)
