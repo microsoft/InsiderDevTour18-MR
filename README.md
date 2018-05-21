@@ -17,6 +17,7 @@
 -	Confirm the floor is in a natural location and everything looks ok. If not, the best thing to do is run Setup in the Mixed Reality Portal again and re-run in Unity
 -	Open the Demo Start scene from the Scenes folder in the Project panel and don’t save changes from the previous scene
 -	Click the Game tab next to the Scene tab, make sure the Maximize On Play button is on, this will maximize the 3D view on screen when we show the scene in the headset. Select the Scene tab again so this tab is displayed
+- For the 4th demo (HoloLens) there are several options but we recommend pre-recording a video with the HoloLens using the app **before** the session. Real-time streaming of the HoloLens can be tricky and delayed around 5 seconds. There is a backup HoloLens demo video on the Teams site for this session. Feel free to use that. If you want to record your own video, export the Unity project with the scene Demo 4 End set as the startup scene. Deploy to the HoloLens from Visual Studio and then capture the video and have it ready to play at the end of demo 4.
 
 ## Demo 1: Get Started
 ### Unity Overview
@@ -97,6 +98,16 @@
 -	[HEADSET OFF and click Play to exit play mode]
 
 ## Demo 4: HoloLens
+- Now let's go ahead and make some changes so that this same project works in an AR environment in HoloLens
+- First disable the RoomPrefab, click the RoomPrefab in the Hierarchy, then uncheck the checkbox in the **Inspector** panel at the top just to the left of the RoomPrefab name. We don't need the entire room environment in HoloLens, we want to use the actual world to interact with the drone and target landing pad
+- Next there is another prefab prepared in the Prefabs folder called HololensManager. Drag this into the Hierarchy panel.
+- The HololensManager prefab has a few components to handle the unique functionality for HoloLens. Expand the HololensManager in the Hierarchy panel. First, let's inspect the RoomPlaceholder. In here it contains the Drone and DroneTarget positioned in world space properly and not as children of the entire rooom. The DroneTarget also has a component for the Mixed Reality toolkit attached to it called Tap To Place. This component allows us to tap and move with the tap gesture in HoloLens 
+- Now looking at the SpatialMappingSceneManager, this object contains a couple Unity components that map the environment around the user, applies a colored mesh to the surfaces it finds, and then creates colliders for those meshes
+- Lastly, there is the VoiceCommandsManager. This object contains two toolkit components to define voice command keywords and then attaches action calls to those keywords. Show the keywords defined and expand the handlers for the keywords in the Inspector panel
+- Now our app is ready to run in HoloLens. In the HoloLens we will use the tap gesture to move the drone landing target and then voice commands to fly the drone, map our environment, and finally instruct the drone to find the closest surface beneath it.
+- Show video (backup video is on Teams site if needed)
+
+
 
 -------------------------------------------
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
