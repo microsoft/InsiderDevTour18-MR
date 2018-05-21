@@ -17,11 +17,12 @@ namespace HoloToolkit.Unity.InputModule.Tests
         private float startY = 0.0f;
         private float endY = 0.0f;
         private Transform endpoint;
+        private AudioSource sfx;
 
         // Use this for initialization
         void Start()
         {
-            
+            sfx = gameObject.GetComponent<AudioSource>();
         }
 
         float last = 0f; 
@@ -93,6 +94,10 @@ namespace HoloToolkit.Unity.InputModule.Tests
                     else
                     {
                         Debug.Log("Move to stage 0");
+                        if (sfx != null)
+                        {
+                            sfx.Stop();
+                        }
                         stage = 0;
                     }
                 }
@@ -114,6 +119,10 @@ namespace HoloToolkit.Unity.InputModule.Tests
                 startY = flyingObject.transform.position.y;
                 endY = transform.position.y + vertOffset;
                 stage = 1;
+                if (sfx !=null)
+                {
+                    sfx.Play();
+                }
             }
         }
 
