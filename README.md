@@ -7,18 +7,31 @@
 - Windows 10 April 2018 Update
 - Visual Studio 2017 (15.7.1 or higher) (Community works great)
 - Universal Windows Platform development workload with Windows 10 SDK (10.0.17134.0)
-- [Unity](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
+- [Unity 2017](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
+
+When installing Unity make sure to check the boxes for the components shown below.
+
+   ![](Images/1.JPG)
 
 ## Pre-Demo Setup:
 
-1. Start Unity and open the Demo project 
-1. Plug your headset in and make sure it is setup for your demo space using the Mixed Reality Portal
+### Windows Mixed Reality
+1. Plug in your headset, the Mixed Reality Portal should start up. Make sure you have run through the complete setup already and you can navigate around the cliff house
 1. Make sure your controllers work in the Mixed Reailty Portal, then turn them off
-1. Open the Demo 1 End scene from the Scenes folder in the Project panel and run in the Unity editor by pressing the Play button in the top center of Unity
+
+### Unity
+1. Clone or download this repo to the machine you will use to demo.
+1. Open Unity and select **Open** project and point it to the repo root folder *InsiderDevTour18-MR*. Unity may take a couple minutes to load all Assets.
+1. From the **File** menu select **Build Settings**. Make sure the platform is set to *Universal Windows Platform*. If you need to change the platform, select *Universal Windows Platform* and click the **Switch Platform** button. Unity will re-compile scripts.
+1. In the Build Settings window, click the **Player Settings** button.
+1. From the Inspector panel, expand the **XR Settings** section and make sure *Virtual Reality Supported* is checked. Youo can close Build Settings window now.
+1. Open the **Demo 1 End** scene from the **Scenes** folder in the **Project** panel and run in the Unity editor by pressing the **Play** button in the top center of Unity
 1. Confirm the floor is in a natural location and everything looks ok. If not, the best thing to do is run Setup in the Mixed Reality Portal again and re-run in Unity
-1. Open the Demo Start scene from the Scenes folder in the Project panel and don’t save changes from the previous scene
-1. Click the Game tab next to the Scene tab, make sure the Maximize On Play button is on, this will maximize the 3D view on screen when we show the scene in the headset. Select the Scene tab again so this tab is displayed
-1. For the 4th demo (HoloLens) there are several options but we recommend pre-recording a video with the HoloLens using the app **before** the session. Real-time streaming of the HoloLens can be tricky and delayed around 5 seconds. There is a backup HoloLens demo video on the Teams site for this session. Feel free to use that. If you want to record your own video, export the Unity project with the scene Demo 4 End set as the startup scene. Deploy to the HoloLens from Visual Studio and then capture the video and have it ready to play at the end of demo 4.
+1. Open the **Demo Start** scene from the Scenes folder in the Project panel and don’t save changes from the previous scene
+1. Click the **Game** tab next to the **Scene** tab, make sure the **Maximize On Play** button is on, this will maximize the 3D view on screen when we show the scene in the headset. Select the Scene tab again so this tab is displayed
+
+### HoloLens Demo (DO THIS BEFORE THE SESSION)
+For the 4th demo (HoloLens) record a video with the HoloLens using the app **before** the session. Real-time streaming of the HoloLens can be tricky and delayed around 5 seconds. There is a backup HoloLens demo video on the Teams site for this session. Feel free to use that. If you want to record your own video, export the Unity project with the scene **Demo 4 End** set as the startup scene. Deploy to the HoloLens from Visual Studio and then capture the video and have it ready to play at the end of demo 4.
 
 ## Demo 1: Get Started
 ### Unity Overview
