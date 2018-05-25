@@ -28,13 +28,7 @@ namespace HoloToolkit.Unity.InputModule.Tests
         float last = 0f; 
         // Update is called once per frame
         void Update()
-        {
-            if (Time.time > (last + 4f))
-            {
-                Debug.Log(string.Format("{0} is at {1} ({2}", this.gameObject.name,
-                this.transform.position, this.transform.localPosition));
-            } 
-
+        {            
             if (stage != 0)
             {
                 // Take-off
