@@ -17,14 +17,14 @@ When installing Unity make sure to check the boxes for the components shown belo
 
 ### Windows Mixed Reality
 1. Plug in your headset, the Mixed Reality Portal should start up. Make sure you have run through the complete setup already and you can navigate around the cliff house
-1. Make sure your controllers work in the Mixed Reailty Portal, then turn them off
+1. Make sure your controllers work in the Mixed Reality Portal, then turn them off
 
 ### Unity
 1. Clone or download this repo to the machine you will use to demo.
 1. Open Unity and select **Open** project and point it to the repo root folder *InsiderDevTour18-MR*. Unity may take a couple minutes to load all Assets.
 1. From the **File** menu select **Build Settings**. Make sure the platform is set to *Universal Windows Platform*. If you need to change the platform, select *Universal Windows Platform* and click the **Switch Platform** button. Unity will re-compile scripts.
 1. In the Build Settings window, click the **Player Settings** button.
-1. From the Inspector panel, expand the **XR Settings** section and make sure *Virtual Reality Supported* is checked. Youo can close Build Settings window now.
+1. From the Inspector panel, expand the **XR Settings** section and make sure *Virtual Reality Supported* is checked. You can close Build Settings window now.
 1. Open the **Demo 1 End** scene from the **Scenes** folder in the **Project** panel and run in the Unity editor by pressing the **Play** button in the top center of Unity
 1. Confirm the floor is in a natural location and everything looks ok. If not, the best thing to do is run Setup in the Mixed Reality Portal again and re-run in Unity
 1. Open the **Demo Start** scene from the Scenes folder in the Project panel and don’t save changes from the previous scene
@@ -49,7 +49,7 @@ For the 4th demo (HoloLens) record a video with the HoloLens using the app **bef
 -	**Click the Player Settings button, this will open the PlayerSettings in the Inspector panel.**
 -	**Expand the XR Settings section, make sure the Virtual Reality Supported checkbox is checked**, this is the most important part besides UWP being the selected platform
 -	**Expand the Publishing Settings and scroll to the bottom where the capabilities are**, note this is where we assign certain capabilities for the app, make sure Microphone is checked
--	To actually kick off an export, go back to the Build Settings window, click the Build button
+-	To actually kick off an export, go back to the Build Settings window, click the **Build** button
 -	Unity will ask for you to select or create an output folder, by selecting a folder an export is kicked off, DO NOT pick a folder, just mention this is the last step and the result will be a VS solution you can then create a Microsoft Store package with. Hit Cancel and then close the Build Settings window too. 
 
 
