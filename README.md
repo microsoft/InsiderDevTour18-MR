@@ -25,10 +25,15 @@ When installing Unity make sure to check the boxes for the components shown belo
 1. From the **File** menu select **Build Settings**. Make sure the platform is set to *Universal Windows Platform*. If you need to change the platform, select *Universal Windows Platform* and click the **Switch Platform** button. Unity will re-compile scripts.
 1. In the Build Settings window, click the **Player Settings** button.
 1. From the Inspector panel, expand the **XR Settings** section and make sure *Virtual Reality Supported* is checked. Youo can close Build Settings window now.
+
+   ![](Images/2.JPG)
+   
 1. Open the **Demo 1 End** scene from the **Scenes** folder in the **Project** panel and run in the Unity editor by pressing the **Play** button in the top center of Unity
 1. Confirm the floor is in a natural location and everything looks ok. If not, the best thing to do is run Setup in the Mixed Reality Portal again and re-run in Unity
 1. Open the **Demo Start** scene from the Scenes folder in the Project panel and don’t save changes from the previous scene
 1. Click the **Game** tab next to the **Scene** tab, make sure the **Maximize On Play** button is on, this will maximize the 3D view on screen when we show the scene in the headset. Select the Scene tab again so this tab is displayed
+
+   ![](Images/3.JPG)
 
 ### HoloLens Demo (DO THIS BEFORE THE SESSION)
 For the 4th demo (HoloLens) record a video with the HoloLens using the app **before** the session. Real-time streaming of the HoloLens can be tricky and delayed around 5 seconds. There is a backup HoloLens demo video on the Teams site for this session. Feel free to use that. If you want to record your own video, export the Unity project with the scene **Demo 4 End** set as the startup scene. Deploy to the HoloLens from Visual Studio and then capture the video and have it ready to play at the end of demo 4.
