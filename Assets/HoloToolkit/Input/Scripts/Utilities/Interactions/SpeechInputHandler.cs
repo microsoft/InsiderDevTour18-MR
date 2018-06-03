@@ -99,7 +99,6 @@ namespace HoloToolkit.Unity.InputModule
             if (enabled && responses.TryGetValue(eventData.RecognizedText.ToLower(), out keywordResponse))
             {
                 keywordResponse.Invoke();
-
 #if EXTEND_TOOLKIT
                 if ( Feedback != null ) 
                 {
@@ -107,13 +106,6 @@ namespace HoloToolkit.Unity.InputModule
                 } 
 #endif 
             }
-
-#if EXTEND_TOOLKIT
-                if (Feedback != null ) 
-                {
-                Feedback.Play(false); 
-                } 
-#endif
         }
 
 #if EXTEND_TOOLKIT
@@ -122,7 +114,7 @@ namespace HoloToolkit.Unity.InputModule
         { 
             get 
             { 
-                if ( feedback == null) 
+                if (_feedback == null) 
                 { 
                     _feedback = GetComponent<SpeechInputFeedback>(); 
                 }    
