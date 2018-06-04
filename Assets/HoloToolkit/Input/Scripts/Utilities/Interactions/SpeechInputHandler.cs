@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-
+#define EXTEND_TOOLKIT  
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -99,7 +99,28 @@ namespace HoloToolkit.Unity.InputModule
             if (enabled && responses.TryGetValue(eventData.RecognizedText.ToLower(), out keywordResponse))
             {
                 keywordResponse.Invoke();
+#if EXTEND_TOOLKIT
+                if ( Feedback != null ) 
+                {
+                    Feedback.Play(true); 
+                } 
+#endif 
             }
         }
+
+#if EXTEND_TOOLKIT
+        private SpeechInputFeedback _feedback; 
+        private SpeechInputFeedback Feedback
+        { 
+            get 
+            { 
+                if (_feedback == null) 
+                { 
+                    _feedback = GetComponent<SpeechInputFeedback>(); 
+                }    
+                return _feedback ; 
+            } 
+        }         
+#endif
     }
 }
