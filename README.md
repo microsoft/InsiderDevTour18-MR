@@ -61,7 +61,7 @@ Before we build a scene let’s make sure the project is properly setup to expor
 ### Building the Scene
 Now we are ready add some objects to our scene, we have prepared a living room prefab. **Prefabs** are reusable components inside Unity that we can easily drag into our scene.
 
-   1. In the **Project** panel expand the *3D Models/Prefabs* folder, drag the **RoomPrefab** into the **Hierarchy** panel
+   1. In the **Project** panel expand the *Prefabs* folder, drag the **RoomPrefab** into the **Hierarchy** panel
    2. Move around a little in the Scene view (by holding down right mouse button) to show off the room, you can use the mouse wheel to zoom in and out
    
 Now we have some beautiful scenery to look at so the next part we need to make sure we setup properly for Windows Mixed Reality is the camera. Every scene has a camera, this represents the users view in Mixed Reality. When we checked the Virtual Reality box this tells Unity to take over the camera positioning for us. So we want to make sure the camera position is set to 0,0,0. The Unity default camera will work fine with virtual reality scenarios, however there are some more feature-rich camera prefabs available in the Mixed Reality Toolkit that we want to take advantage of.
