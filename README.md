@@ -36,7 +36,7 @@ When installing Unity make sure to check the boxes for the components shown belo
    ![](Images/3.JPG)
 
 ### HoloLens Demo (DO THIS BEFORE THE SESSION)
-For the 4th demo (HoloLens) record a video with the HoloLens using the app **before** the session. Real-time streaming of the HoloLens can be tricky and delayed around 5 seconds. There is a backup HoloLens demo video on the Teams site for this session. Feel free to use that. If you want to record your own video, export the Unity project with the scene **Demo 4 End** set as the startup scene. Deploy to the HoloLens from Visual Studio and then capture the video and have it ready to play at the end of demo 4.
+For the 4th demo (HoloLens) record a video with the HoloLens using the app **before** the session. Real-time streaming of the HoloLens can be tricky and delayed around 5 seconds. There is a backup HoloLens demo video in this repo. Feel free to use that. If you want to record your own video, export the Unity project with the scene **Demo 4 End** set as the startup scene. Deploy to the HoloLens from Visual Studio and then capture the video and have it ready to play at the end of demo 4.
 
 ## Demo 1: Get Started
 ### Unity Overview
@@ -198,7 +198,7 @@ This object contains two toolkit components to define voice command keywords and
 
 Now our app is ready to run in HoloLens. In the HoloLens we will use the tap gesture to move the drone landing target and then voice commands to fly the drone, map our environment, and finally instruct the drone to find the closest surface beneath it.
 
-   7. Show video you prepared (backup video is on Teams site if needed)
+   7. Show video you prepared (backup video is in this repo if needed)
 
 
 
