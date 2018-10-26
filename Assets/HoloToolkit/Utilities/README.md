@@ -39,7 +39,7 @@ To run the SceneLauncher:
 
 ### [Scripts](Scripts)
 ---
-Utilitiy Scripts.
+Utility Scripts.
 
 #### [Editor](Scripts/Editor)
 ---
@@ -125,7 +125,7 @@ TODO: Remove if reduncatnt to InterpolatedVector3.cs
 ---
 
 #### ApplicationViewManager.cs
-Switchs app to a XAML page view, and waits for a return value from it.
+Switches app to a XAML page view, and waits for a return value from it.
 
 #### Billboard.cs
 Rotates a hologram so it is always facing towards the camera.
