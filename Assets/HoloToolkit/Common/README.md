@@ -3,7 +3,7 @@ Classes that are needed by most feature areas are in this folder.
 
 ### [Scripts](Scripts)
 ---
-Utilitiy Scripts.
+Utility Scripts.
 
 #### [Editor](Scripts/Editor)
 ---
